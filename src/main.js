@@ -111,12 +111,12 @@ logoutBtn.addEventListener('click', async () => {
 
 
 loginBtn.addEventListener('click', () => {
-  window.location.href = './login/index.html'; 
+  window.location.href = import.meta.env.BASE_URL + 'login/index.html';
 });
 
 addBtn.addEventListener('click', () => {
   if (!isLoggedIn) {
-    window.location.href = './login/index.html'; 
+    window.location.href = import.meta.env.BASE_URL + 'login/index.html'; 
   } else {
     openModal();
   }

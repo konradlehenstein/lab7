@@ -25,6 +25,6 @@ console.error(error);
     errorMsg.classList.remove('hidden');
   } else {
 
-    window.location.href = '../index.html?t=' + Date.now();
+    window.location.href = import.meta.env.BASE_URL + '?t=' + Date.now();
   }
 });
