@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "tailwindcss": "^4.3.0",
     "vite": "^6.3.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@supabase/supabase-js": "^2.107.0"
+  }
 }
