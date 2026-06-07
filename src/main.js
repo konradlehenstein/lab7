@@ -104,10 +104,9 @@ function escapeHTML(str) {
 }
 
 
-
 logoutBtn.addEventListener('click', async () => {
   await supabase.auth.signOut();
-  await init(); 
+  window.location.reload(); 
 });
 
 

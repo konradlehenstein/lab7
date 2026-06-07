@@ -14,6 +14,8 @@ for await (const entry of glob('src/**/*.html')) {
 
 export default defineConfig({
   plugins: [],
+  base: '/lab7/',
+  root: resolve(__dirname, 'src'),
 
   root: resolve(__dirname, 'src'),
   build: {
