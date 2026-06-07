@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 7</title>
+    <script type="module" crossorigin src="/lab7/assets/index-g4A1BoNI.js"></script>
+    <link rel="modulepreload" crossorigin href="/lab7/assets/index-CtooXIqZ.js">
+    <link rel="stylesheet" crossorigin href="/lab7/assets/index-CTDjZwJK.css">
+  </head>
+  <body class="bg-gray-50 text-gray-800 min-h-screen font-sans">
+    
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">Blog - Lab 7</h1>
+        <div class="flex gap-4">
+          <button id="add-btn" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors font-medium">Dodaj artykuł</button>
+          <button id="login-btn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors font-medium hidden">Zaloguj</button>
+          <button id="logout-btn" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition-colors font-medium hidden">Wyloguj</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+      <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <p class="text-gray-500 col-span-full text-center py-10">Ładowanie artykułów...</p>
+      </div>
+    </main>
+
+    <div id="article-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden px-4 z-50">
+      <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-lg">
+        <h2 id="modal-title" class="text-xl font-bold mb-4">Dodaj nowy artykuł</h2>
+        <form id="article-form" class="flex flex-col gap-4">
+          <input type="hidden" id="article-id" />
+          
+          <div>
+            <label class="block text-sm font-medium mb-1">Tytuł *</label>
+            <input type="text" id="title" required class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none" />
+          </div>
+          
+          <div>
+            <label class="block text-sm font-medium mb-1">Podtytuł</label>
+            <input type="text" id="subtitle" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">Autor *</label>
+            <input type="text" id="author" required class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">Treść *</label>
+            <textarea id="content" required rows="4" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+          </div>
+
+          <div class="flex justify-end gap-3 mt-4">
+            <button type="button" id="cancel-btn" class="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">Anuluj</button>
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors font-medium">Zapisz</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

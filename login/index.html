@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logowanie</title>
+  <script type="module" crossorigin src="/lab7/assets/index-CPCMrtYd.js"></script>
+  <link rel="modulepreload" crossorigin href="/lab7/assets/index-CtooXIqZ.js">
+  <link rel="stylesheet" crossorigin href="/lab7/assets/index-CTDjZwJK.css">
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">Zaloguj się</h2>
+    
+    <form id="login-form" class="flex flex-col gap-4">
+      <div>
+        <label class="block text-sm font-medium mb-1">E-mail</label>
+        <input type="email" id="email" required class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none">
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium mb-1">Hasło</label>
+        <input type="password" id="password" required class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none">
+      </div>
+      
+      <p id="error-msg" class="text-red-500 text-sm hidden"></p>
+      
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-medium transition-colors mt-2">Zaloguj</button>
+    </form>
+    
+    <div class="mt-4 text-center">
+      <a href="../index.html" class="text-sm text-gray-500 hover:text-blue-500">Powrót do strony głównej</a>
+    </div>
+  </div>
+
+</body>
+</html>
